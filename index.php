@@ -32,7 +32,7 @@
     </head>
 
     <body>
-        <!-- Your dev where you append your views, e.g. ng-view -->
+        <!-- Your div where you append your views, e.g. ng-view -->
         <div id="view"></div>
 
         <!-- Path to your script -->
