@@ -1,4 +1,4 @@
-OnePage-SEO
+One Page SEO
 ===========
 Serve static content of a one-page website to crawlers.
 
