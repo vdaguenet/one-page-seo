@@ -1,5 +1,11 @@
 <?php
-    include_once __DIR__ . '/detection.php';
+    include_once __DIR__ . '/../BotDetector.php';
+
+    $detector = new BotDetector();
+    $detector->setServerOS($detector::LINUX);
+    if($detector->isBot()) {
+        $detector->displayStaticContent();
+    }
 ?>
 <!DOCTYPE html>
 <html>

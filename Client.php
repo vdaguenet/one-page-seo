@@ -5,7 +5,6 @@ class Client
     private $script;
     private $url;
     private $domx;
-    private $snapshotDir;
     private $response;
 
     public function __construct()
@@ -42,16 +41,6 @@ class Client
     public function getUrl()
     {
         return $this->url;
-    }
-
-    public function setSnapshotDir($path)
-    {
-        $this->snapshotDir = $path;
-    }
-
-    public function getSnapshotDir()
-    {
-        return $this->snapshotDir;
     }
 
     public function send()
