@@ -6,7 +6,7 @@ Installation
 ============
 ## Via Composer
 ```
-composer install vdaguenet/one-page-seo
+composer require vdaguenet/one-page-seo
 ```
 
 Usage
