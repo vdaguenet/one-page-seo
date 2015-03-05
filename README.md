@@ -2,6 +2,13 @@ One Page SEO
 ===========
 Serve static content of a one-page website to crawlers.
 
+Installation
+============
+## Via Composer
+```
+composer install vdaguenet/one-page-seo
+```
+
 Usage
 ============
 Add the following line on top of your `index.php`
