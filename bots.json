@@ -1,0 +1,10 @@
+{
+  "useragents": [
+    "facebookexternalhit/1.1 (+https://www.facebook.com/externalhit_uatext.php)",
+    "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+    "Pinterest/0.1 +http://pinterest.com/",
+    "Google (+https://developers.google.com/+/web/snippet/)",
+    "Google-StructuredDataTestingTool; +http://www.google.com/webmasters/tools/richsnippets",
+    "Slackbot-LinkExpanding (+https://api.slack.com/robots)"
+  ]
+}

@@ -29,13 +29,7 @@ class BotDetector
 
     public function isBot() {
         // Social media bots
-        $bots = array(
-            'facebookexternalhit/1.1 (+https://www.facebook.com/externalhit_uatext.php)',
-            'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)',
-            'Pinterest/0.1 +http://pinterest.com/',
-            'Google (+https://developers.google.com/+/web/snippet/)',
-            'Google-StructuredDataTestingTool; +http://www.google.com/webmasters/tools/richsnippets'
-          );
+        $bots = json_decode(file_get_contents(__DIR__ . '/bots.json'))->useragents;
         // If its a crawler or a social media bot
         return (isset($_GET['_escaped_fragment_']) ||
             in_array($_SERVER['HTTP_USER_AGENT'], $bots) ||

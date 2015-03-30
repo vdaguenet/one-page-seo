@@ -33,7 +33,7 @@
 
         <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
         <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./build/styles.css" />
+        <!-- <link rel="stylesheet" href="path/to/styles.css" /> -->
         <meta name="fragment" content="!">
     </head>
 
@@ -41,7 +41,6 @@
         <!-- Your div where you append your views, e.g. ng-view -->
         <div id="view"></div>
 
-        <!-- Path to your script -->
-        <script src="./build/build.js"></script>
+        <!-- <script src="path/to/script.js"></script> -->
     </body>
 </html>
