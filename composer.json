@@ -13,5 +13,9 @@
     "minimum-stability": "beta",
     "require": {
         "php": ">=5.0.0"
+    },
+    "require-dev": {
+        "symfony/dom-crawler": "^2.7",
+        "symfony/css-selector": "^2.7"
     }
 }
