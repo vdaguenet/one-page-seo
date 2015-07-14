@@ -1,2 +1,2 @@
 /vendor/
-*lock
+*.lock
