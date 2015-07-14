@@ -29,10 +29,21 @@ class BotDetector
 
     public function isBot() {
         // Social media bots
-        $bots = json_decode(file_get_contents(__DIR__ . '/bots.json'))->useragents;
-        // If its a crawler or a social media bot
-        return (isset($_GET['_escaped_fragment_']) ||
-            in_array($_SERVER['HTTP_USER_AGENT'], $bots) ||
+        $bots = json_decode(file_get_contents(__DIR__ . '/bots.json'));
+        $botsArray = $this->stdClassToArray($bots);
+        $res = false;
+
+        // Search if UA is in bot list
+        foreach ($botsArray as $botName => $botUAs) {
+          if (true === in_array($_SERVER['HTTP_USER_AGENT'], $botUAs)) {
+            $res = true;
+            break;
+          }
+        }
+
+        // If it's a crawler or a social media bot
+        return (true === $res ||
+            isset($_GET['_escaped_fragment_']) ||
             strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'twitterbot') !== false ||
             strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'google') !== false  ||
             strpos(strtolower($_SERVER['REMOTE_ADDR']), 'googlebot') !== false
@@ -60,5 +71,9 @@ class BotDetector
 
         echo $this->client->send();
         die();
+    }
+
+    private function stdClassToArray($stdClassObject) {
+      return json_decode(json_encode($stdClassObject), true);
     }
 }
