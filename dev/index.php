@@ -1,7 +1,7 @@
 <?php
   require_once __DIR__ . "/BotDomParser.php" ;
 
-  $file = __DIR__ . '/../bots_new.json';
+  $file = __DIR__ . '/../bots.json';
   $botList = [];
   $countError = 0;
   $MAX_ERROR  = 5;
