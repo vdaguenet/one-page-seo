@@ -1,6 +1,6 @@
 {
     "name": "vdaguenet/one-page-seo",
-    "version": "1.0.0"
+    "version": "1.0.0",
     "description": "Serve static content of a one-page website to crawlers (e.g. Facebook, Google or Twitter) using PhantomJS",
     "keywords": ["seo", "one page", "bot", "crawler", "phantomjs"],
     "homepage": "https://github.com/vdaguenet/one-page-seo",
