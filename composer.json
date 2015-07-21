@@ -1,5 +1,6 @@
 {
     "name": "vdaguenet/one-page-seo",
+    "version": "1.0.0"
     "description": "Serve static content of a one-page website to crawlers (e.g. Facebook, Google or Twitter) using PhantomJS",
     "keywords": ["seo", "one page", "bot", "crawler", "phantomjs"],
     "homepage": "https://github.com/vdaguenet/one-page-seo",
@@ -7,10 +8,10 @@
     "authors": [
         {
             "name": "Valentin Daguenet",
-            "email": "valentin.daguenet@gmail.com"
+            "email": "valentin.daguenet@gmail.com",
+            "homepage": "http://vdaguenet.fr"
         }
     ],
-    "minimum-stability": "beta",
     "require": {
         "php": ">=5.0.0"
     },
